@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sprites
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 2
+      generateMipMaps: 1
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+    - serializedVersion: 2
+      m_BuildTarget: Standalone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+    - serializedVersion: 2
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+    - serializedVersion: 2
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: b06166400179ced488ab47d80a6a77af, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 0cec3c92f82c47441b636b554c0f8e15, type: 3}
+  - {fileID: 21300000, guid: 7ee664f2105021e408e3d3416d360417, type: 3}
+  - {fileID: 21300000, guid: 577bdb33742e4ab4386fc244b71533c3, type: 3}
+  - {fileID: 21300000, guid: 76641d2467127144385b94d0a930c756, type: 3}
+  - {fileID: 21300000, guid: 1e16e495f239f724e886b327b4c4d721, type: 3}
+  - {fileID: 21300000, guid: e1bd2656e6695ed4aa8dd7719bcd8b39, type: 3}
+  - {fileID: 21300000, guid: 2a75e27676ba6364bbaef74fca03b04a, type: 3}
+  - {fileID: 21300000, guid: 54007c296f92a9f49a2237c8425c7b65, type: 3}
+  - {fileID: 21300000, guid: e44390799c91e704aaeb35b74eb32567, type: 3}
+  - {fileID: 21300000, guid: bdbb8f8a107d1e545ac53575344e5807, type: 3}
+  - {fileID: 21300000, guid: 2b09577fa42621942aa9713beed489a4, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - previous_buttonAsset 24
+  - Next_buttonAsset 23
+  - pause_buttonAsset 25
+  - Play_buttonAsset 22
+  - Audio_On
+  - 1x1_whiteAsset 33
+  - Next
+  - Home
+  - Previous
+  - Audio_Off
+  - 2x2_middle_whiteAsset 32
+  m_Tag: Sprites
+  m_IsVariant: 0

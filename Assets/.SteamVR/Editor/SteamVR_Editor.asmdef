@@ -1,0 +1,53 @@
+{
+    "name": "SteamVR_Editor",
+    "references": [
+        "SteamVR",
+        "Unity.XR.OpenVR",
+        "Unity.XR.Management.Editor",
+        "Unity.XR.Management"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "Android",
+        "CloudRendering",
+        "Editor",
+        "iOS",
+        "LinuxStandalone64",
+        "Lumin",
+        "macOSStandalone",
+        "PS4",
+        "Stadia",
+        "Switch",
+        "tvOS",
+        "WSA",
+        "WebGL",
+        "WindowsStandalone32",
+        "WindowsStandalone64",
+        "XboxOne"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "USE_OPENVR_SDK"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.valvesoftware.unity.openvr",
+            "expression": "",
+            "define": "OPENVR_XR_API"
+        },
+        {
+            "name": "com.unity.xr.management",
+            "expression": "3.2.0",
+            "define": "XR_MGMT_GTE_320"
+        },
+        {
+            "name": "com.unity.xr.management",
+            "expression": "",
+            "define": "XR_MGMT"
+        }
+    ],
+    "noEngineReferences": false
+}

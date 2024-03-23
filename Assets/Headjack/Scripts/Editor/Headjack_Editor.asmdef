@@ -1,0 +1,24 @@
+{
+    "name": "Headjack_Editor",
+    "rootNamespace": "",
+    "references": [
+        "Headjack",
+        "SimpleJSON",
+        "Unity.XR.Management",
+        "Unity.XR.Management.Editor",
+        "Oculus.Platform",
+        "HeadjackInternal",
+        "Unity.XR.Oculus"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

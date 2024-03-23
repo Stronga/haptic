@@ -1,0 +1,34 @@
+{
+    "name": "Oculus.VR.Scripts.Editor",
+    "references": [
+        "Oculus.VR",
+        "Oculus.VR.Editor"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "Android",
+        "CloudRendering",
+        "iOS",
+        "LinuxStandalone64",
+        "Lumin",
+        "macOSStandalone",
+        "PS4",
+        "Stadia",
+        "Switch",
+        "tvOS",
+        "WSA",
+        "WebGL",
+        "WindowsStandalone32",
+        "WindowsStandalone64",
+        "XboxOne"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "USE_OCULUS_SDK"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

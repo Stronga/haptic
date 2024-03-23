@@ -1,0 +1,19 @@
+{
+    "name": "Pico_UnitySDK_Editor",
+    "references": [
+        "GUID:9f6416b3728ef0847b2770fd8ec78284"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "USE_PICO_SDK"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

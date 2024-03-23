@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: e2fce48b0aea4434aaeab6ac62438324
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Sans Arabic UI
+  fontNames:
+  - Noto Sans Arabic UI
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 07cb2892a13c7354baa261e17e62e3dc, type: 3}
+  - {fileID: 12800000, guid: 2a18f1b6139cda649bb9b3cceb8c86d0, type: 3}
+  - {fileID: 12800000, guid: 2ea9e68e316d9d24a9e749535e3662e1, type: 3}
+  - {fileID: 12800000, guid: 0c3330de2a42b6448b065e8112f76969, type: 3}
+  - {fileID: 12800000, guid: 9992922f04897b640bc6fbfa0c0863a6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

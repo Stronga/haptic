@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Template/App.unity
+    guid: 4d6662bbe873d6145adb5599bb2da94f
+  - enabled: 1
+    path: Assets/Template/MainMenu.unity
+    guid: 02ff5ff0b19939a479b794f4cc2774d0
+  - enabled: 1
+    path: Assets/Template/VideoPlayer.unity
+    guid: 0dde867cf4e474b4989676eb9eb93629
+  m_configObjects:
+    Unity.XR.Oculus.LegacySettings: {fileID: 11400000, guid: 6a38822bbeaf52f4dae4e45524f90308,
+      type: 2}
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 84cf05e85534c874a9ef92cdb6a52f7e,
+      type: 2}
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 42615b63ee34a5640a397106cf954d62,
+      type: 2}
+    Unity.XR.PXR.Settings: {fileID: 11400000, guid: b42af9dc583ffdd4ea872227cd8e56bc,
+      type: 2}
+    com.htc.upm.wave.xrsdk.xrsettings: {fileID: 11400000, guid: 1ce3c05bdee692d48b147d59e8e4c80b,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 589edaa8d7c0fac4f9923b0a594b2aef,
+      type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 10c15999a233127478074fbf761abc92,
+      type: 2}

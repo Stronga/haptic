@@ -1,0 +1,35 @@
+{
+    "name": "Headjack",
+    "rootNamespace": "",
+    "references": [
+        "Unity.XR.Management",
+        "SimpleJSON",
+        "LiteNetLib",
+        "Audio360_SDK",
+        "UnityEngine.SpatialTracking",
+        "Unity.Networking.BackgroundDownload",
+        "Oculus.Platform",
+        "Oculus.VR",
+        "PicoMobileSDK",
+        "MobfishCardboard",
+        "AVProVideo_Runtime",
+        "SteamVR",
+        "Wave.Native",
+        "Unity.XR.PICO",
+        "HeadjackInternal"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor",
+        "iOS",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

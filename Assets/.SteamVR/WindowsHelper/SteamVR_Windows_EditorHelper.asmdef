@@ -1,0 +1,17 @@
+{
+    "name": "SteamVR_Windows_EditorHelper",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "USE_OPENVR_SDK"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
