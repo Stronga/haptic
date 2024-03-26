@@ -4,8 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using Headjack;
 using TMPro;
+
 public class Splash : MonoBehaviour
 {
+
+	//added variable for the botton
+	public Button continueButton;
+
 	public RectTransform scaleRect;
 	public RawImage splashImage;
 	public AspectRatioFitter aspectRatioFitter;
@@ -18,15 +23,22 @@ public class Splash : MonoBehaviour
 
 	void Start()
 	{
-		App.ShowCrosshair = false;
-		VRInput.MotionControllerLaser = false;
+		App.ShowCrosshair = true;
+		 Headjack.VRInput.MotionControllerLaser = true;
 
 		progressBar.material.SetFloat("_Progress", 0);
 		splashImage.texture = Resources.Load<Texture2D>("Textures/Splash");
 		//First load Headjack. This creates the VR Camera
 		App.Initialize(OnHeadjackInitialized, true, true);
+		continueButton.gameObject.SetActive(false);
+		continueButton.onClick.AddListener(OnContinueClicked);
 	}
 
+	public void OnContinueClicked() {
+    App.Fade(true, 1f, delegate (bool s, string e) {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Template/MainMenu");
+    });
+		}
 	public static bool willShowError=false;
 	public static bool willShowMessage=false;
 	public static string messageToShow = null;
@@ -205,8 +217,9 @@ public class Splash : MonoBehaviour
 	void OnAllTexturesDownloaded(bool succes, string error)
 	{
 		//If there was an error, show an message but do continue to menu
-		if (!succes)
-		{
+		 if (succes && !willShowError) {
+        continueButton.gameObject.SetActive(true);
+    } else {
 			App.ShowMessage(error);
 		}
 
@@ -230,16 +243,16 @@ public class Splash : MonoBehaviour
 				}
 			}
 
-			App.Fade(true, 1f, delegate (bool s, string e)
-			{
-				UnityEngine.SceneManagement.SceneManager.LoadScene("Template/MainMenu");
-			});
+			// App.Fade(true, 1f, delegate (bool s, string e)
+			// {
+			// 	UnityEngine.SceneManagement.SceneManager.LoadScene("Template/MainMenu");
+			// });
 		});
 #else // USE_AVPROVIDEO && (UNITY_STANDALONE || UNITY_EDITOR)
-		App.Fade(true, 1f, delegate (bool s, string e)
-		{
-			UnityEngine.SceneManagement.SceneManager.LoadScene("Template/MainMenu");
-		});
+		// App.Fade(true, 1f, delegate (bool s, string e)
+		// {
+		// 	UnityEngine.SceneManagement.SceneManager.LoadScene("Template/MainMenu");
+		// });
 #endif
 	}
 
@@ -254,10 +267,29 @@ public class Splash : MonoBehaviour
 	}
 
 	void Update() {
-		if (!trackingOriginWasSet && App.camera != null && App.CameraParent != null) {
-			// set tracking origin to floor
-			trackingOriginWasSet = App.SetTrackingOrigin(App.TrackingOrigin.FloorLevel);
-		}
-	}
+    // Check if the VR motion controller is available
+    if (Headjack.VRInput.MotionControllerAvailable) {
+        // If the controller is available, use the laser pointer
+        Headjack.VRInput.MotionControllerLaser = true;
+        App.ShowCrosshair = false; // Disable gaze tracking to avoid confusion
+    } else {
+        // If the controller is not available, fallback to gaze tracking
+        App.ShowCrosshair = true;
+        Headjack.VRInput.MotionControllerLaser = false;
+    }
+
+    // Check if the user is selecting an object either by laser or gaze
+    //if (Headjack.App.IsCrosshairHit(/* Insert your GameObject/Collider here */, Headjack.VRInput.MotionControllerAvailable ? RayCastSource.MotionController : RayCastSource.Gaze)) {
+        // Code to handle the object selection, e.g., feedback, object interaction, etc.
+    //}
+
+    // Existing tracking origin set logic
+    if (!trackingOriginWasSet && App.camera != null && App.CameraParent != null) {
+        // set tracking origin to floor
+        trackingOriginWasSet = App.SetTrackingOrigin(App.TrackingOrigin.FloorLevel);
+    }
+}
+
 
 }
+

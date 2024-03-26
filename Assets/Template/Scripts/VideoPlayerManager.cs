@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using Bhaptics.SDK2;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Headjack;
 using UnityEngine.SceneManagement;
+
 public class VideoPlayerManager : MonoBehaviour
 {
 	private static VideoPlayerManager _instance;
@@ -38,9 +40,28 @@ public class VideoPlayerManager : MonoBehaviour
 			gameObject.SetActive(false);
 		}
 	}
+	IEnumerator PlayNextVideoAfterDelay(float delay)
+{
+    yield return new WaitForSeconds(delay); // Wait for the specified delay
+			BhapticsLibrary.Play("yes_360");
+			
+}
+	// void update()
+	// {
+	// 	if (Headjack.App.Player.IsPlaying) {
+	// 		// Call your specific function here
+	// 		 BhapticsLibrary.Play("yes_360");
+	// 		 StartCoroutine(PlayNextVideoAfterDelay(3));
+	// 	}
+
+	// }
+
 
 	public void Initialize(string projectId, bool stream, OnEnd onVideoEnd, bool resetOnPause = false, bool prepareOnly = false, long videoTime = 0)
 	{
+		
+		StartCoroutine(PlayNextVideoAfterDelay(1.1f));
+		//BhapticsLibrary.Play("yes_360");
 		this.onVideoEnd += onVideoEnd;
 		Debug.Log("Playing project " + projectId);
 		isKiosk = false;
